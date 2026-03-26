@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You \u2013 RBA Realtors</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Poppins', 'Helvetica Neue', sans-serif;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: linear-gradient(135deg, #eef2ff 0%, #f0f7ff 55%, #f8fafc 100%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* \u2500\u2500 Card \u2500\u2500 */
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(15, 31, 53, 0.10), 0 0 0 1px rgba(26, 79, 214, 0.06);
+      padding: 52px 40px 44px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      animation: popIn 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.94) translateY(18px); }
+      to   { opacity: 1; transform: scale(1)    translateY(0);    }
+    }
+
+    /* \u2500\u2500 Icon \u2500\u2500 */
+    .icon-wrap {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, rgba(26,79,214,0.10), rgba(26,79,214,0.04));
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 24px;
+    }
+    .icon-wrap svg {
+      width: 34px;
+      height: 34px;
+      stroke: #1a4fd6;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* \u2500\u2500 Text \u2500\u2500 */
+    h1 {
+      font-size: clamp(1.9rem, 6vw, 2.5rem);
+      font-weight: 800;
+      color: #0f1f35;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .subheading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #1a4fd6;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .body-text {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #64748b;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    /* \u2500\u2500 Reass
