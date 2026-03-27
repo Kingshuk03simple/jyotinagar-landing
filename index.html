@@ -220,22 +220,40 @@
     .radio-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .radio-group label {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: flex-start;
+  gap: 12px;
   background: #f8faff;
-  border: 1px solid #e2e8f0;
-  padding: 10px 12px;
-  border-radius: 10px;
+  border: 1.5px solid #e2e8f0;
+  padding: 14px 16px;
+  border-radius: 12px;
   cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #0f1f35;
+  transition: all 0.2s ease;
 }
 
-.radio-group input {
+.radio-group input[type="radio"] {
+  margin: 0;
+  transform: scale(1.2);
   accent-color: #1a4fd6;
+}
+
+.radio-group label:hover {
+  border-color: #1a4fd6;
+  background: #eef2ff;
+}
+
+.radio-group input[type="radio"]:checked + span,
+.radio-group label:has(input:checked) {
+  border-color: #1a4fd6;
+  background: #e0e7ff;
 }
 
     .form-title {
@@ -670,13 +688,22 @@
 
   <!-- NEW: Budget -->
   <div class="form-group">
-    <label>Budget Range</label>
-    <div class="radio-group">
-      <label><input type="radio" name="budget" value="Under 40L" required> Under 40L</label>
-      <label><input type="radio" name="budget" value="40L - 60L"> 40L – 60L</label>
-      <label><input type="radio" name="budget" value="60L+"> 60L+</label>
-    </div>
+  <label>Budget Range</label>
+  <div class="radio-group">
+    <label>
+      <input type="radio" name="budget" value="Under 40L" required>
+      <span>Under 40L</span>
+    </label>
+    <label>
+      <input type="radio" name="budget" value="40L - 60L">
+      <span>40L – 60L</span>
+    </label>
+    <label>
+      <input type="radio" name="budget" value="60L+">
+      <span>60L+</span>
+    </label>
   </div>
+</div>
 
   <!-- NEW: Timeline -->
   <div class="form-group">
